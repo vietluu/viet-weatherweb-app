@@ -1,0 +1,103 @@
+.header-item{
+    display: flex;
+    width: 100%;
+    background-color: black;
+}
+.contact-menu,.socient-menu{
+    display:inherit;
+    list-style-type: none;
+}
+.contact-menu{
+    margin-right: 0;
+}
+.socient-menu{
+    margin-left: -20px;
+}
+.socient-menu li{
+    padding: 5px 20px 5px 20px;
+
+}
+.contact-menu li{
+    padding: 5px 10px 5px 10px;
+}
+.contact-menu li a,.socient-menu li a{
+    color: rgb(255, 255, 255);
+}
+.contact-menu li a:hover,.socient-menu li a:hover{
+    color: blue;
+}
+.menu{
+width: 100%;
+display: flex;
+background-color: rgb(237, 243, 243);
+
+align-items: center;
+}
+.logo{
+    flex: 0 0 10%;
+    margin-left: 0;
+}
+.main-menu{
+    list-style-type: none;
+    display:inherit;
+    flex-wrap: nowrap;
+    flex: 0 0 50%;
+    margin-right: 0;
+    font-size: 13px;
+   
+
+}
+.categories{
+position: relative;
+flex: 0 0 17%;
+text-align: center;
+padding: 10px 0px;
+border-right: 1px solid black;
+
+
+}
+.categories > .sub-menu{
+    list-style-type: none;
+    position: absolute;
+    z-index: 1000;
+    right: 0;
+    padding: 0;
+    width: -webkit-fill-available;;
+    margin-top: 10px;
+    display: none;
+    
+}
+.categories:hover >.sub-menu{
+    display: block;
+}
+.categories a{
+    color: black;
+}
+.categories > .sub-menu li{
+    
+    padding: 10px 0px;
+    background-color: rgb(237, 243, 243);;
+    align-content: center;
+    border-right: none;
+    border-top: 1px solid black;
+}
+.categories > .sub-menu :first-child{
+    border-top: none;
+}
+#submit{
+    flex: 0 0 10%;
+    display: inherit;
+    
+}
+#submit button{
+width: 100%;
+padding: 15px;
+background-color: red;
+color: #000;
+border: none;
+border-radius: 3px;
+
+
+}
+
+  

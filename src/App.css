@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgb(245, 243, 243);
+}
+#root{
+height: 100%;
+}
+.container{
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    
+}
+.search{
+    width: 400px;
+    border: 0.1px solid rgb(167, 163, 163);
+    border-radius: 5px;
+    padding: 2px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
+.search-bar{
+
+height: 30px;
+outline: none;
+border: none;
+width: 80%;
+font-size: 12pt;
+background: none;
+
+
+
+}
+.search-btn{
+    width: auto;
+    right: 0;
+    height: 30px;
+    font-size: 1.2rem;
+    border: 0;
+    margin: 5px;
+    color: rgb(8, 8, 8);
+    background: none;
+   
+    
+    
+}
+.weather-result{  
+   
+    margin-top: 100px;
+    line-height: 120px;
+    text-align: center;
+}
+.city-name{
+    font-size: 3rem;
+}
+.city-temp{
+
+    font-size: 2.5rem;
+
+}
+.city-des{
+    font-size: 2rem;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Hind', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+   
+}
+html {
+    scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a,
+a:hover,
+a:link,
+a:active,
+a:focus {
+    text-decoration: none;
+    outline: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media only screen and (max-width : 500px ) {
+    .search{
+        width: 300px;
+    }
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media only screen and (max-width : 300px ) {
+    .search{
+        width: 200px;
+    }
+    .search-btn{
+        font-size: small;
+      
+        
+    }
+    .search-bar{
+        font-size: small;
+        
+    }
 }
