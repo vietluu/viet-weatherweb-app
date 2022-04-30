@@ -1,17 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import "font-awesome/css/font-awesome.min.css";
-import Header from "./component/Header";
-import 'font-awesome/css/font-awesome.min.css';
-
-
-
 
 function App() {
   const [filters, setfilters] = useState("Hanoi");
   const [value, setvalues] = useState("");
   const [list, setlist] = useState([{}]);
-
 
   document.title = "WeatherWeb App";
 
@@ -29,17 +23,15 @@ function App() {
           .then((data) => {
             setlist(data);
           });
-          console.log(list)
+        console.log(list);
       } catch (error) {
-        console.log("lỗi");
+        console.log(error);
       }
     };
     fetchData();
   }, [filters]);
 
- 
   return (
-    
     <div className="container" style={{ width: "100%" }}>
       <div className="search">
         <input
